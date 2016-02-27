@@ -15,7 +15,6 @@
                 views: {
                     'index': {
                         templateUrl: 'theme/views/app.html',
-                        controller: 'AppController as app'
                     }
                 }
             });
