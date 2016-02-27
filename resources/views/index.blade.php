@@ -18,7 +18,7 @@
 
     </head>
 
-    <body ng-class="{ 'sw-toggled': true}">
+    <body ng-controller="AppController as app" ng-class="{'sw-toggled' : app.$storage.boxedLayout}">
 
         <div ui-view="index"></div>
 
@@ -68,6 +68,8 @@
 
         <!-- Core -->
         <script src="front-end/js/vendor.min.js"></script>
+        <!-- Material Admin -->
+        <script src="front-end/js/material-admin.min.js"></script>
 
         <!-- Placeholder for IE9 -->
         <!--[if IE 9 ]>
