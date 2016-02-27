@@ -39,8 +39,8 @@ var paths = {
         'node_modules/angular/angular.min.js',
         'node_modules/angular-animate/angular-animate.min.js',
         'node_modules/angular-ui-router/release/angular-ui-router.min.js',
+        'node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js',
         'node_modules/angular-loading-bar/build/loading-bar.min.js',
-        'node_modules/angular-bootstrap/ui-bootstrap-tpls.min.js',
         // Common vendor
         'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js',
         'node_modules/bootstrap-sweetalert/lib/sweet-alert.min.js',
@@ -48,7 +48,7 @@ var paths = {
         'node_modules/bootstrap-growl/bootstrap-notify.min.js',
         'node_modules/moment/moment.js',
         'node_modules/nouislider-angular/nouislider.min.js',
-
+        'node_modules/ngstorage/ngStorage.min.js',
     ],
     vendorCss: [
         'node_modules/animate.css/animate.min.css',
@@ -131,7 +131,7 @@ function templates() {
 }
 
 function translateFunction() {
-    gulp.src('./angular/**/*.json')
+    gulp.src(paths.baseDir + '**/*.json')
         .pipe(translate())
         .pipe(gulp.dest('assets/js/'));
 }
