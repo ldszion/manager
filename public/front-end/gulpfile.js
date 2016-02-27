@@ -10,10 +10,11 @@ var sass          = require('gulp-sass');
 
 gulp.task('default', ['watch']);
 gulp.task('test', test);
-gulp.task('build', ['jshint', 'build:vendor', 'build:source', 'css:vendor', 'css:source']);
+gulp.task('build', ['jshint', 'build:vendor', 'build:source', 'build:theme', 'css:vendor', 'css:source']);
 
 gulp.task('build:vendor', buildVendor);
 gulp.task('build:source', ['templates', 'translate'], buildSource);
+gulp.task('build:theme', buildThemeFunction);
 gulp.task('css:vendor', buildCssVendor);
 gulp.task('css:source', ['sass'], buildCssSource);
 gulp.task('sass', buildSass);
@@ -64,7 +65,11 @@ var paths = {
         baseDir + '**/*.sass',
         'assets/sass/**/*.sass',
     ],
-    dist: './'
+    dist: './',
+    themeSource: [
+        'material/material-admin.module.js',
+        'material/**/*.js',
+    ]
 };
 
 
@@ -136,4 +141,11 @@ function watchFunction() {
         paths.baseDir + '**/*',
         paths.sassFiles
     ], ['build']);
+}
+
+function buildThemeFunction() {
+    return gulp.src(paths.themeSource)
+        .pipe(concat('material-admin.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest(paths.dist + 'js/'));
 }
