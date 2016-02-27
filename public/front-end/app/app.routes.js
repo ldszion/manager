@@ -19,6 +19,7 @@
                 }
             });
         $urlRouterProvider
+            .when('', '/')
             .otherwise('/404');
     }
 })();
