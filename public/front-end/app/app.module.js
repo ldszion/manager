@@ -5,7 +5,13 @@
         .module('app', [
             // Terceiros
             'ui.router',
+            'ui.bootstrap',
+            'angular-loading-bar',
+            'ngAnimate',
+            'ngStorage',
             // App
             'app.templates',
+            // Theme
+            'materialAdmin',
         ]);
 })();
