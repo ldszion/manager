@@ -1,0 +1,12 @@
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+public/front-end/node_modules/
+public/front-end/js/app.min.js
+public/front-end/js/vendor.min.js
+public/front-end/js/material-admin.min.js
+public/front-end/assets/js/templates.js
+public/front-end/css/vendor.min.css
+.phpintel/
