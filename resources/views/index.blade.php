@@ -12,9 +12,10 @@
         <link rel="stylesheet" type="text/css" href="front-end/css/vendor.min.css">
 
         <!-- CSS -->
-        <link href="front-end/css/app.min.1.css" rel="stylesheet" id="app-level">
-        <link href="front-end/css/app.min.2.css" rel="stylesheet">
+        <link href="front-end/css/material.min.1.css" rel="stylesheet" id="app-level">
+        <link href="front-end/css/material.min.2.css" rel="stylesheet">
         <link href="front-end/css/demo.css" rel="stylesheet">
+        <link href="front-end/css/app.min.css" rel="stylesheet">
 
     </head>
 
