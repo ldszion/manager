@@ -41,10 +41,12 @@ var paths = {
         'node_modules/angular-ui-router/release/angular-ui-router.min.js',
         'node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js',
         'node_modules/angular-loading-bar/build/loading-bar.min.js',
+        'node_modules/angular-translate/dist/angular-translate.min.js',
+        'node_modules/angular-smart-table/dist/smart-table.min.js',
         // Common vendor
         'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js',
         'node_modules/bootstrap-sweetalert/lib/sweet-alert.min.js',
-        'node_modules/waves/dist/waves.min.js',
+        'node_modules/node-waves/dist/waves.min.js',
         'node_modules/bootstrap-growl/bootstrap-notify.min.js',
         'node_modules/moment/moment.js',
         'node_modules/nouislider-angular/nouislider.min.js',
@@ -58,8 +60,7 @@ var paths = {
         'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css',
     ],
     sourceCss: [
-        //'assets/vendor/**/*.css',
-        //'assets/css/**/*.css',
+        'assets/css/**/*.css',
     ],
     sassFiles: [
         baseDir + '**/*.sass',

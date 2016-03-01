@@ -24,6 +24,8 @@
     "angular-animate": "^1.5.0",
     "angular-bootstrap": "^0.12.2",
     "angular-loading-bar": "^0.8.0",
+    "angular-smart-table": "^2.1.6",
+    "angular-translate": "^2.9.2",
     "angular-ui-bootstrap": "^1.2.0",
     "angular-ui-router": "^0.2.18",
     "animate.css": "^3.5.1",
@@ -35,8 +37,8 @@
     "material-design-iconic-font": "^2.2.0",
     "moment": "^2.11.2",
     "ngstorage": "^0.3.10",
+    "node-waves": "^0.7.5",
     "nouislider-angular": "^2.3.0",
-    "oclazyload": "^1.0.9",
-    "waves": "^0.1.1"
+    "oclazyload": "^1.0.9"
   }
 }
